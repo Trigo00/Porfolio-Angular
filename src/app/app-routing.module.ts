@@ -6,9 +6,13 @@ import { EducacionComponent } from './educacion/education.component';
 import { ProjectComponent } from './proyectos/project.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
-import { AppComponent } from './app.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 const routes: Routes = [
+    {
+        path: '',
+        component: InicioComponent
+    },
     {
         path: 'about',
         component: AboutComponent ,
@@ -18,11 +22,11 @@ const routes: Routes = [
         component: ExperienceComponent,
     },
     {
-        path: 'Educacion',
+        path: 'education',
         component: EducacionComponent
     },
     {
-        path: 'Proyectos',
+        path: 'proyectos',
         component: ProjectComponent
     },
     {
